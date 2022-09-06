@@ -4,6 +4,19 @@ package operators;
 import java.util.Scanner;
 
 public class Operators {
+   public static void duplicate {
+		int []arr={1,2,3,4,2,5,6,7,2,4,1};
+		List<Integer> l=new ArrayList<Integer>();
+		for(int i=0;i<arr.length-1;i++)
+		{
+			 if((arr[i]^arr[i+1])==0)
+                              l.add(arr[i]);
+		}
+		
+		for(int i=0;i<l.size();i++)
+			System.out.print(l.get(i)+" ");
+		
+	}
 
     public static void toBinary(int a){
            if (a>1)
@@ -37,6 +50,7 @@ public class Operators {
         swap(a,b);
         toBinary(a);
         oddOrEven(a);
+        duplicate();
         
     }
     
